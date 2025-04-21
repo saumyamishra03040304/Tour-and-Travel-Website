@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trip Engineers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Trip<span> Engineers</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <!-- <li class = "nav-item">
+                            <a href = "" class = "nav-link">DropDown</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Dropdown
+                                    <i class=""></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="singletourpackages.html" class="nav-link">Single Tour Packages</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Contact Us</h1>
+                    <h2>How can we help you today?</h2>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- contact section -->
+        <section id = "contact" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">happy to help you, get in touch with us</span>
+                    <h2 class = "lg-title">contact us</h2>
+                </div>
+
+                <div class = "contact-row">
+                    <div class = "contact-left">
+                        <form name="myform" class = "contact-form" ">
+                            <input type = "text" class = "form-control" placeholder="Your name">
+                            <input type = "email" class = "form-control" placeholder="Your email">
+                            <input type = "subject" class = "form-control" placeholder="Subject">
+                            <input type = "date" class = "form-control" placeholder="Date">
+                            <p>To select the Age click on the right side of box for calender</p>
+                            <textarea rows = "4" class = "form-control" placeholder="Your message" style = "resize: none;"></textarea>
+                            <input type = "submit" class = "btn" value = "Send message" >
+                        </form>
+                    </div>
+                    <div class = "contact-right my-2">
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-phone"></i>
+                            </span>
+                            <div>
+                                <span>Phone</span>
+                                <p class = "text">+91 9999988888</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-home"></i>
+                            </span>
+                            <div>
+                                <span>Address</span>
+                                <p class = "text">124-Manhattan Street, New Delhi</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span>Message</span>
+                                <p class = "text">info@tripengineeers.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+        
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Trip<span>Engineers</span>
+                    </a>
+                    <p class = "text">Trip Engineers are delighted to offer you a special opportunity to experience popular destinations this season.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "https://www.facebook.com/">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://twitter.com/">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://in.pinterest.com/">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "https://www.pinterest.com/igori/thailand/">Thailand</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?rs=ac&len=2&q=australia&eq=australia&etslf=4951&term_meta[]=australia%7Cautocomplete%7C1">Australia</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?q=maldives&rs=typed&term_meta[]=maldives%7Ctyped">Maldives</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?q=Switzerland&rs=typed&term_meta[]=Switzerland%7Ctyped">Switzerland</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?q=germany&rs=typed&term_meta[]=germany%7Ctyped">Germany</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?q=usa&rs=typed&term_meta[]=usa%7Ctyped">USA</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?rs=ac&len=2&q=sanfransico%20california&eq=sanfran&etslf=6188&term_meta[]=sanfransico%7Cautocomplete%7C1&term_meta[]=california%7Cautocomplete%7C1">San Fransisco</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?rs=ac&len=2&q=new%20zealand&eq=new%20zea&etslf=5063&term_meta[]=new%7Cautocomplete%7C0&term_meta[]=zealand%7Cautocomplete%7C0">New Zealand</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?q=disneyland&rs=typed&term_meta[]=disneyland%7Ctyped">DisneyLand</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?q=greece&rs=typed&term_meta[]=greece%7Ctyped">Greece</a></li>
+                        <li><a href = "https://www.pinterest.com/search/pins/?q=nepal&rs=typed&term_meta[]=nepal%7Ctyped">Nepal</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        
+    </body>
+</html>

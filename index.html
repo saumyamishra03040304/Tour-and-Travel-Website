@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trip Engineers</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .bookbtn {
+            display: inline-flex;
+            justify-content: center;
+            align-content: center;
+            height: 30px;
+            width: 110px;
+            background-color: #1ec6b6;
+            border-radius: 20px;
+            font-weight: bold;
+            /* margin-top: 30px; */
+            padding-top: 7px;
+            color: black;
+        }
+
+        .frams {
+            margin-top: 50px;
+            margin-left: 5px;
+            /* margin-right: 50px; */
+            height: 450px;
+            width: 1500px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 10px grey;
+        }
+
+        /* .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: rgb(249, 244, 244);
+            /* padding: 0px 0px; */
+            /* background-color: inherit;
+            font-family: inherit;
+            margin: 0rem 0;
+        } */
+
+
+        /* .dropdown-content {
+            border-radius: 10px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(255, 252, 252);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        } */ 
+    </style>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Trip <span> Engineers</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">Dropdown</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">Drop-Down</a>
+                        <div class="dropdown">
+                            <a href="https://www.google.com/">xxxxxxxxxxx</a><br>
+                            <a href="#">yyyyyyyyyyy</a><br>
+                            <a href="#">zzzzzzzzzzzz</a><br>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="dropbtn">Our Combos
+                                <i class=""></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="singletourpackages.html">single tour packages</a>
+                                <a href="#">Couples Package</a>
+                                <a href="#">Group Packages</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="singletourpackages.html" class="nav-link">Single Tour Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+
+    </div>
+    <!-- header -->
+    <header class="flex">
+        <div class="container">
+            <div class="header-title">
+                <h1>Welcome To Trip Engineers</h1>
+                <p> Looking for something affordable?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Want something original? <br> Then
+                    you are at the right place !!
+                </p>
+            </div>
+            <div class="header-form">
+                <h2>Enter Details:</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Traveller name">
+                    <input type="Date" class="form-control" placeholder="Date of departure">
+                    <input type="number" class="form-control" placeholder="Number of adults">
+                    <input type="submit" class="btn" value="Search">
+
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- featured section -->
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">know about some places before your travel</span>
+                <h2 class="lg-title">featured places</h2>
+            </div>
+
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="images/featured-reo-de-janeiro-brazil.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Reo De Janeiro, Brazil (INR 119k – 524k)
+                        </span>
+                        <div>
+                            <p class="text">Rio de Janeiro serves as the capital of the state &nbsp;&nbsp;of the same
+                                name, Brazil's 3rd-most populous state</p>
+                            <a href="#" class="bookbtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/featured-north-bondi-australia.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            North Bondi, Australia (INR 430k – 561k)
+                        </span>
+                        <div>
+                            <p class="text">North Bondi is a coastal, eastern suburb of &nbsp;&nbsp;Sydney, in the state
+                                of the same name.</p>
+                            <a href="#" class="bookbtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/featured-berlin-germany.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Berlin, Germany (INR 89k – 279k)
+                        </span>
+                        <div>
+                            <p class="text">Berlin is the capital and largest city of Germany &nbsp;&nbsp; by both area
+                                and population</p>
+                            <a href="#" class="bookbtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/featured-khwaeng-wat-arun-thailand.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Khwaeng wat arun, thailand (INR 119k – 274k)
+                        </span>
+                        <div>
+                            <p class="text">It used to be the home of the Emerald Buddha before the capital and Palace
+                                was moved to the other side of the river</p>
+                            <a href="#" class="bookbtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="images/featured-rome-italy.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rome, Italy (INR 219k – 249k)
+                        </span>
+                        <div>
+                            <p class="text">Rome is famous for the Colosseum, the Roman Forum, and a sprawling
+                                metropolis of Classical architecture</p>
+                            <a href="#" class="bookbtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="photos\aerial-view.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            fuvahmulah, maldives (INR 100k – 124k)
+                        </span>
+                        <div>
+                            <p class="text">Fuvahmulah City is an island in the Maldives. It is under Maldives
+                                administrative divisions of Gnaviyani Atoll or Nyaviyani Atoll</p>
+                            <a href="#" class="bookbtn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title">we are having the best </span>
+                    <h2 class="lg-title">Single Tour Package</h2>
+                </div>
+
+                <div class="featured-row">
+                    <div class="featured-item my-2 shadow">
+                        <img src="photos\Switzerland.jpg.optimal.jpg">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Trip To Switzerland (INR 111k – 124k)
+                            </span>
+                            <div>
+                                <p class="text">Switzerland, officially the Swiss Confederation, is a landlocked country
+                                    located at the confluence of Western, Central and Southern Europe</p>
+                                <a href="#" class="bookbtn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-item my-2 shadow">
+                        <img src="photos\Amalfi-Italy.webp">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Trip To Italy (INR 170k – 290k)
+                            </span>
+                            <div>
+                                <p class="text">Italy officially the Italian Republic, is a country that consists of a
+                                    peninsula delimited by the Alps</p>
+                                <a href="#" class="bookbtn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-item my-2 shadow">
+                        <img src="photos\GettyImages-133969846-596da35068e1a200112a3e89.jpg">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Trip To Bhutan (INR 24k – 50k)
+                            </span>
+                            <div>
+                                <p class="text">Bhutan officially known as the Kingdom of Bhutan is a landlocked country
+                                    in the Eastern Himalayas</p>
+                                <a href="#" class="bookbtn">Book Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title">we offer the best </span>
+                    <h2 class="lg-title">honeyoon packages</h2>
+                </div>
+
+                <div class="featured-row">
+                    <div class="featured-item my-2 shadow">
+                        <img src="photos\our-top-blogging-couple-1170x780.jpg" alt="featured place">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Trip To Mauritious (INR 19k – 24k)
+                            </span>
+                            <div>
+                                <p class="text">The main island of Mauritius, where most of the population is
+                                    concentrated, hosts the capital and largest city, Port Louis</p>
+                                <a href="#" class="bookbtn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-item my-2 shadow">
+                        <img
+                            src="photos\shutterstock-130167065-kw-220517-A-couple-on-a-jetty-in-front-of-the-overwater-properties-on-an-island-resort-in-Maldives.webp">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Trip To maldives (INR 70k – 200k)
+                            </span>
+                            <div>
+                                <p class="text">Fuvahmulah City is an island in the Maldives. It &nbsp;is under Maldives
+                                    administrative divisions of Gnaviyani Atoll.</p>
+                                <a href="#" class="bookbtn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-item my-2 shadow">
+                        <img src="photos\istockphoto-472144896-170667a.jpg">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Trip To Dubai (INR 125k – 150k)
+                            </span>
+                            <div>
+                                <p class="text">Dubai is the most populated city in the (UAE),the most populated of the
+                                    7 monarchies</p>
+                                <a href="#" class="bookbtn">Book Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <div class="title-wrap">
+                        <!-- <span class="sm-title">-----------</span> -->
+                        <h2 class="lg-title">Wildlife Packages</h2>
+                    </div>
+
+                    <div class="featured-row">
+                        <div class="featured-item my-2 shadow">
+                            <img src="photos\san.webp">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Trip To Seychelles Islands (INR 28k – 49k)
+                                </span>
+                                <div>
+                                    <p class="text"> Located off the East Coast of Africa, the islands are home to an
+                                        abundance of wildlife and endemic species</p>
+                                    <a href="#" class="bookbtn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-item my-2 shadow">
+                            <img src="photos\Sri-Dalada-Maligawa.jpg">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Trip To Sri Lanka (INR 17k – 21k)
+                                </span>
+                                <div>
+                                    <p class="text">Sri Lanka, formerly known as Ceylon and officially the Democratic
+                                        Socialist Republic of &nbsp;Sri Lanka, is an island country in South Asia.</p>
+                                    <a href="#" class="bookbtn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-item my-2 shadow">
+                            <img src="photos\indo.jpg">
+                            <div class="featured-item-content">
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Trip To Indonesia (INR 129k – 257k)
+                                </span>
+                                <div>
+                                    <p class="text">Indonesia, officially the Republic of Indonesia, is a country in
+                                        Southeast Asia and Oceania between the Indian and Pacific oceans.</p>
+                                    <a href="#" class="bookbtn">Book Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="title-wrap">
+                            <!-- <span class="sm-title">we offer the best </span> -->
+                            <h2 class="lg-title">Adventure Packages</h2>
+                        </div>
+
+                        <div class="featured-row">
+                            <div class="featured-item my-2 shadow">
+                                <img src="photos\a1.jpg">
+                                <div class="featured-item-content">
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Trip To Colombia (INR 28k – 32k)
+                                    </span>
+                                    <div>
+                                        <p class="text">A huge array of available adventure experiences paragliding,
+                                            bungee jumping, skydiving </p>
+                                        <a href="#" class="bookbtn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="featured-item my-2 shadow">
+                                <img src="photos\a2.jpg">
+                                <div class="featured-item-content">
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Trip To Zambia (INR 90k – 200k)
+                                    </span>
+                                    <div>
+                                        <p class="text">While it’s mainly visited en route to Victoria Falls – the
+                                            largest waterfall in the world </p>
+                                        <a href="#" class="bookbtn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="featured-item my-2 shadow">
+                                <img src="photos\a3.jpg">
+                                <div class="featured-item-content">
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Trip To Norway (INR 335k – 441k)
+                                    </span>
+                                    <div>
+                                        <p class="text">Located on the Arctic archipelago of Svalbard, the humble,
+                                            coal-mining town of Longyearbyen</p>
+                                        <a href="#" class="bookbtn">Book Now</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+    </section>
+    <!-- end of featured section -->
+
+    <!-- services section -->
+    <section id="services" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">know about services that we offer</span>
+                <h2 class="lg-title">Our services</h2>
+            </div>
+
+            <div class="services-row">
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-hotel"></i>
+                    </span>
+                    <h3>Luxurious Hotel</h3>
+                    <p class="text">A Luxury Hotel is considered a hotel that provides a luxurious accommodation
+                        experience to the guest. </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <h3>Trave Guide</h3>
+                    <p class="text">Comprehensive travel guides to destinations all around the world to help you travel
+                        on a budget, and find great things to do and see.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+
+                <div class="services-item">
+                    <span class="services-icon">
+                        <i class="fas fa-money-bill"></i>
+                    </span>
+                    <h3>Affordable Price</h3>
+                    <p class="text">price is low enough that you (or most people) have enough money to buy it. </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of services section -->
+
+    <!-- testimonials section -->
+    <section id="testimonials" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">our clients</span>
+                <h2 class="lg-title">testimonials</h2>
+            </div>
+
+            <div class="test-row">
+                <div class="test-item">
+                    <p class="text">It's always a pleasure experience with Will and his team. They are personable,
+                        responsive, and results-oriented!</p>
+                    <div class="test-item-info">
+                        <img src="https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?w=360"
+                            alt="testimonial">
+                        <div>
+                            <h3>Michael Reddif</h3>
+                            <p class="text">Trip to U.S.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">Always available, extremely knowledgeable, and a tremendous "can-do" attitude. . His
+                        guidance and advice was invaluable in producing that app which easily exceeded my
+                        expectations...... highly recommended.
+                    </p>
+                    <div class="test-item-info">
+                        <img src="https://gsfiles.s3.amazonaws.com/images/folder73/profilePic73-1462417920217.jpg"
+                            alt="testimonial">
+                        <div>
+                            <h3>Jeff Bezos</h3>
+                            <p class="text">Trip to India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-item">
+                    <p class="text">The Pacific Grove Chamber of Commerce would like to thank eLab Communications and
+                        Mr. Will Elkadi for all the efforts and suggestions that assisted us in better positioning
+                        ourselves in the area of web, technology and training.</p>
+                    <div class="test-item-info">
+                        <img src="https://www.pinkvilla.com/imageresize/tom_mission_impossible_0.jpg?width=752&format=webp&t=pvorg"
+                            alt="testimonial">
+                        <div>
+                            <h3>Tom Cruze</h3>
+                            <p class="text">Trip to Maldives</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end of testimonials section -->
+
+    <!-- comment -->
+    <p><b>&nbsp;&nbsp;**Hover the mouse pointer to pause the news scroller and move the pointer out to unhold...</b></p>
+
+    <!-- start of  news section -->
+    <marquee scrollamount="15" onmouseover="this.stop();" onmouseout="this.start();">
+        <div class="container">
+            <iframe class="frams" id="frams" src="https://www.google.com" title="online news" scroll="auto">
+            </iframe>
+        </div>
+    </marquee>
+
+
+    <!-- end of news section -->
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Trip<span>Engineers</span>
+                </a>
+                <p class="text">Trip Engineers are delighted to offer you a special opportunity to experience popular
+                    destinations this season.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://in.pinterest.com/">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="https://www.pinterest.com/igori/thailand/">Thailand</a></li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=australia&eq=australia&etslf=4951&term_meta[]=australia%7Cautocomplete%7C1">Australia</a>
+                    </li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?q=maldives&rs=typed&term_meta[]=maldives%7Ctyped">Maldives</a>
+                    </li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?q=Switzerland&rs=typed&term_meta[]=Switzerland%7Ctyped">Switzerland</a>
+                    </li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?q=germany&rs=typed&term_meta[]=germany%7Ctyped">Germany</a>
+                    </li>
+                    <li><a href="https://www.pinterest.com/search/pins/?q=usa&rs=typed&term_meta[]=usa%7Ctyped">USA</a>
+                    </li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=sanfransico%20california&eq=sanfran&etslf=6188&term_meta[]=sanfransico%7Cautocomplete%7C1&term_meta[]=california%7Cautocomplete%7C1">San
+                            Fransisco</a></li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?rs=ac&len=2&q=new%20zealand&eq=new%20zea&etslf=5063&term_meta[]=new%7Cautocomplete%7C0&term_meta[]=zealand%7Cautocomplete%7C0">New
+                            Zealand</a></li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?q=disneyland&rs=typed&term_meta[]=disneyland%7Ctyped">DisneyLand</a>
+                    </li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?q=greece&rs=typed&term_meta[]=greece%7Ctyped">Greece</a>
+                    </li>
+                    <li><a
+                            href="https://www.pinterest.com/search/pins/?q=nepal&rs=typed&term_meta[]=nepal%7Ctyped">Nepal</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script>
+
+    </script>
+</body>
+
